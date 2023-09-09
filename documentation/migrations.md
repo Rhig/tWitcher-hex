@@ -13,6 +13,8 @@ Generating a migration means automatically creating a migration file (a class th
 npm run migration:generate --name=<my_migration_name>
 ```
 
+<strong>Note:</strong> This will try and find the entity files under hex-backend/dist/\*\*/\*.entity{.ts,.js}, so you will need to run a command that builds the project (e.g. `nest build` or `nest start`) for it to work.
+
 This will generate the migration file under hex-backend/src/migrations/.
 
 ## How to apply a new migration
